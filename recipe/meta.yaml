@@ -14,7 +14,7 @@ source:
     - 0003-fix-use-native-stdint.h-for-VS-2010.patch
 
 build:
-  number: 3
+  number: 4
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
