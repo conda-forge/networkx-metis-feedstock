@@ -22,7 +22,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - Cython
+    - cython <3
     - decorator
     - enum34  # [py<34]
     - networkx
