@@ -14,12 +14,13 @@ source:
     - 0003-fix-use-native-stdint.h-for-VS-2010.patch
 
 build:
-  number: 4
+  number: 5
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
   host:
     - cython <3
